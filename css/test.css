@@ -1,0 +1,48 @@
+
+      .container-fluid{
+        background: url("images/image.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: auto;
+        overflow-x: hidden !important;
+}
+section{
+    background: rgba(13, 12, 12, 0.7);
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+h1{
+    color: grey;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    letter-spacing: 5px;
+    font:bold 41px sans-serif;
+}
+p{
+   text-align: center;
+   color: grey;
+   font: bold 28px sans-serif;
+   letter-spacing: 3px;
+   position: relative;
+   bottom: 150px;
+   outline: none !important; 
+}
+.stk{
+    height: 1100px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    align-items: center;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 440px;
+ }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/test.css">
+    <script src="test.js"></script>
+    <title>Document</title>
+   <style>
+        .container-fluid{
+    background: url("images/image.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+}
+form{
+    font: bold 22px Verdana;
+    color: rgba(23, 191, 152, 0.82);
+}
+input{
+        display: flex;
+        margin: 0 auto;
+        border: 3px solid black;
+        background: transparent;
+        border-radius: 20px 20px;
+        font: bold 34px Verdana;
+        align-items: center;
+        height: 65px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 0px;
+        height: 65px;
+        border-radius: 60px 60px !important;
+        width: 23px; 
+        flex-wrap:wrap !important;
+        
+    }
+    #btn{
+        color: rgba(23, 191, 152, 0.82);
+    }
+    #btn:hover{
+        color: rgba(0, 184, 92, 1);
+    }
+   button{
+        display: flex;
+        margin: 0 auto;
+        border: 3px solid black;
+        background: transparent;
+        border-radius: 20px 20px;
+        font: bold 24px Verdana;
+        align-items: center;
+        height: 65px;
+        color: rgba(20, 20, 20, 1);
+        
+    }
+  
+    button:hover{
+        background: rgba(13, 12, 12, 0.5);
+        color: #e0e0e0;
+        transition: 1.23s;
+        
+        outline: none !important;
+        border: 3px solid black;
+        
+    }
+    a{
+      text-decoration: none !important;
+      outline: none !important;
+      border: none  !important;
+  }
+  a:hover{
+    outline: none !important;
+      
+  }   
+   
+    </style>
+  
+</head>
+<body>
+    <div class="container-fluid">
+        <section>
+               <form>
+                  <input type="radio" id="Неправильно"name="" value=""> 1
+                  <input type="radio" id="Неправильно" name="" value=""> 4 
+                  <input type="radio" id="Правильно" name="" value=""> 2
+                  <input type="radio" id="Неправильно" name="" value=""> 5
+                         <button type="button" id="btn">ОТПРАВИТЬ</button>
+               </form>
+               
+        </section>
+    </div><br><br><br>
+    <a href="text-test-7.html"><button type="button">ПЕРЕЙТИ К СЛЕД.ВОПРОСУ</button></a><br><br>
+    <a href="text-test-5.html"><button type="button">ВЕРН. К ПРЕД.ВОПРОСУ</button></a>
+    <script>
+                    document.write('<body style = "background:#cdd4be;"></body><h1 style="padding:70px;">Сколько вариантов синтаксиса в пустом обьекте?</h1>')
+                        let btn = document.querySelector('#btn');
+                        btn.onclick = function () {
+                            let rbs = document.querySelectorAll('input[id]');
+                            let selectedValue;
+                            for (let r of rbs) {
+                                if (r.checked) {
+                                    selectedValue = r.id;
+                                    
+                                    break;
+                                }
+                            }
+                        if(btn != true){
+                            
+                            document.write( "<html><a href='text-test-6.html' style='display:flex; justify-content:left; text-decoration:none; color:#1c1394;'>назад</a><img src='images/exit.png'></html>", '<body style="text-align:center; font:bold 31px Verdana; color:#3b3b3b;"></body>',selectedValue, "<h2 style='text-align:center;'>Ответ:2<h2>");
+                        }
+                        else{
+                            
+                                
+                        }
+                        document.write( '<h1 style="text-align:center; font-size:35px !important;"><a href="text-test-7.html" style="text-decoration:none; color:#1c1394;">перейти к след.вопросу</a></h1><html><br><br></html>'
+                        );
+                    };
+     </script>
+     
+     
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+  
+
+</body>
+</html>
